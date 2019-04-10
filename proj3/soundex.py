@@ -2,6 +2,9 @@
 # soundex.py template
 # CSCI 4140
 
+# input - python3 soundex.py <test.txt>
+# where test.tx is a file containing last names seperated by a newline
+
 import sys
 import nltk
 import re
@@ -27,7 +30,6 @@ def wordmap(token) :
     #replace adjacents
     stringtoken = list(stringtoken)
     for i in range(1, len(stringtoken)):
-      prev = stringtoken[i-1]
       if stringtoken[i] == stringtoken[i-1]:
         stringtoken[i] = ''
     stringtoken = ''.join(stringtoken)
