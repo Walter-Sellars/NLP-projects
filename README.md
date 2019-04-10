@@ -7,6 +7,7 @@ Requires NLTK for all projects.
 ```bash
 pip install nltk
 python3 
+```
 ```python3
 >>>import nltk
 >>>nltk.download()
